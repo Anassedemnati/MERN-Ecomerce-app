@@ -4,7 +4,7 @@ const app= express();
 
 
 app.get('/',(req,res)=>{
-    res.send('api is running...');
+    res.send('api is running....');
 })
 
 app.get('/api/products',(req,res)=>{

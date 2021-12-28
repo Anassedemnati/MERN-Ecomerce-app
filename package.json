@@ -8,9 +8,15 @@
     "react-router": "^6.0.2",
     "react-router-dom": "^6.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^6.5.1",
+    "nodemon": "^2.0.15"
+  },
   "scripts": {
-    "start": "node backend/server.js"
+    "start": "node backend/server",
+    "server":"nodemon backend/server",
+    "client":"npm start --prefix ecom-frontend",
+    "dev": "concurrently \"npm run server \" \"npm run client\""
   },
   "author": "Anasse Demnati",
   "license": "MIT"
