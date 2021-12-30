@@ -9,6 +9,7 @@
     "colors": "^1.4.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-async-handler": "^1.2.0",
     "mongoose": "^6.1.4"
   },
   "devDependencies": {
@@ -20,8 +21,8 @@
     "server": "nodemon backend/server",
     "client": "npm start --prefix ecom-frontend",
     "dev": "concurrently \"npm run server \" \"npm run client\"",
-    "data:import":"node backend/seeder",
-    "data:destroy":"node backend/seeder -d"
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "author": "Anasse Demnati",
   "license": "MIT"
